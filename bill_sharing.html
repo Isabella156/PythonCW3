@@ -1,0 +1,67 @@
+<html>
+<script>
+
+//Calculate bill to share
+function billSharing() {
+  var billAmt = document.getElementById("billamt").value;
+  var serviceQual = document.getElementById("tips").value;
+  var numOfPeople = document.getElementById("people").value;
+
+  //validate bill amount
+
+  
+  //validate tips amount
+
+  
+  
+  //validate number of people
+
+
+  //Calculate shared bill
+  //  total = total.toFixed(2);
+  //Display the tip
+  // document.getElementById("tip").innerHTML = total;
+
+}
+
+
+</script> 
+
+<title>Bill Sharing Calculator</title>
+</head> 
+<body>
+  
+<div id="container">
+  <div id="calculator">
+    <form>
+      <p>&emsp;How much was your bill?
+        <p> &emsp;£ <input id="billamt" type="text" placeholder="Total Bill">
+
+          <p>&emsp;How was your service?
+            <p>&emsp;
+              <select id="tips">
+            <option disabled selected value="0">-- Choose tips amount --</option>
+            <option value="0.3">30&#37; &#45; Outstanding</option>
+            <option value="0.2">20&#37; &#45; Good</option>
+            <option value="0.15">15&#37; &#45; It was OK</option>
+            <option value="0.1">10&#37; &#45; Bad</option>
+            <option value="0.05">5&#37; &#45; Terrible</option>
+        </select>
+
+    </form>
+    <p>&emsp;How many people are sharing the bill?</p>
+    &emsp; <input id="people" type="text" placeholder="No.people to share"> people
+    <button type="button" id="calculate" onclick=billSharing()>Calculate!</button>
+
+  </div>
+  <div id="totalTip">
+    <p>&emsp;Each person to pay £<span id="tip">0.00</span>
+    <small id="each"></small></p>
+  </div>
+</div>
+
+
+</body>
+
+</html>
+
